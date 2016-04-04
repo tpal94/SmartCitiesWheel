@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="text, opening sequence, opening credits, css animations, typography, lettering.js" />
+    <meta name="author" content="Codrops" />
+
+    <title>SMART CITIES WHEEL&trade;-World's 1st Smart Cities designing company </title>
+
+    <!-- Bootstrap Core CSS -->
+   
+    <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
+    
+    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+       <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+    
+    <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+  <div class="bg"></div>
+<body>
+
+    <!-- Navigation -->
+ 
+   
+
+    <!-- Header -->
+    <header id="top" class="header">
+        <div class="text-vertical-center">
+                <div class="os-phrases" id="os-phrases">
+                <h2>World's 1<sup style ="font-size: 8px;">st</sup></h2>
+                <h2>Smart Cities</h2>
+                <h2>Designing</h2>
+                <h2>Tool</h2>
+                <h2>Revolution</h2>
+
+                
+                <!--<h2>This Platform</h2>
+                <h2>Prepare</h2>
+                <h2>SMART CITIES WHEEL <br>SDS
+                </h2>-->
+            </div>
+            <div class="os-phrase-last" id="os-phrase-last">
+                <h2>Coming Soon</h2>
+            </div>
+            <!--<h1>Start Bootstrap</h1>-->
+      
+            <div class ="col-xs-12" style ="margin-top:200px;padding-left:0; padding-right:0;">
+              <h3>Smart Cities Wheel&trade;- We're Coming</h3>
+          </div>
+            <br>
+         <div class="codrops-centre">
+             <form method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form-inline" target="_blank" novalidate>
+             <div id="mc_embed_signup_scroll">   
+             <div class="form-group text-vertical-center">
+               <input type="email" value="" name="EMAIL" class="email subscribe" id="mce-EMAIL" placeholder="email address" autofocus="true" required>
+            </div>
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+         <div style="position: absolute; left: -5000px;" aria-hidden="true">
+           <div>
+              <input type="text" name="b_e981edc34fafeeaa74fd4607f_2ad8d05739" tabindex="-1" value="">
+           </div>
+       </div>
+    <div class="clear"><input type="submit" value="JOIN THE REVOLUTION" name="subscribe" id="mc-embedded-subscribe" class="button subs-btn" onclick="checkEmailAddress()"></div>
+    </div>
+     </form>
+   </div>
+            
+ </div>
+    </header>
+
+
+    <!-- About -->
+    
+
+    <!-- Custom Theme JavaScript -->
+    <script>
+    // Closes the sidebar menu
+$(function () { $("input,select,textarea").not("[type=submit]").jqBootstrapValidation(); } );
+/*
+
+     function checkEmailAddress(){
+            if($("#mce-EMAIL").val()==""){
+             $("#mce-EMAIL").css("border-color","#fff");
+             $("#mce-EMAIL").css("box-shadow","#fff");
+
+             return false
+            }
+
+       } */    
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Scrolls to the selected menu item on the page
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+    </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="js/jquery.lettering.js"></script>
+        <script>
+            $(document).ready(function() {
+
+
+            function animation_text(){
+            $("#os-phrases > h2").lettering('words').children("span").lettering().children("span").lettering();                 
+
+            }
+           var result = animation_text();
+          if(result == false) { 
+               
+          }    
+
+          else{
+             $('#os-phrase-last').hide().delay(31000).fadeIn(2200);
+          }     
+               
+                
+            
+            })
+        </script>
+</body>
+
+</html>
